@@ -89,12 +89,35 @@ export const Tags = styled.span`
 `;
 
 export const Photo = styled.div`
-  transform: rotate(4.149deg);
   flex-shrink: 0;
   justify-items: end;
+  position: relative;
 
-  img {
+  > img {
     border-radius: 0.5rem;
     box-shadow: 8px 8px 0px 0px #A839FF;
+    transform: rotate(4.149deg);
+  }
+`;
+
+export const SocialTag = styled.div`
+  position: absolute;
+  top: 16px;
+  right: -146px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+
+  a {
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    border: 1.75px solid transparent;
+    color: white;
+    background: linear-gradient(#0A0909, #0A0909) padding-box, ${(props) => props.theme.gradient} border-box;
+    transition: 0.5s; 
   }
 `;

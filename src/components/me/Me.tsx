@@ -1,6 +1,7 @@
 import React from 'react';
-import { GradientText, MeContainer, Photo, Span, Tags } from './Me.styles';
+import { GradientText, MeContainer, Photo, SocialTag, Span, Tags } from './Me.styles';
 import MyPhoto from '../../assets/myPhoto.png';
+import { BsGithub, BsLinkedin, BsSpotify } from 'react-icons/bs';
 
 const Me = () => {
   return (
@@ -24,7 +25,11 @@ const Me = () => {
 
       <Photo>
         <img src={MyPhoto} alt="Matheus Palhares" />
-        
+        <SocialTag>
+          <a href='#'><BsGithub size={16} />GitHub</a>
+          <a href='#'><BsLinkedin size={16} />LinkedIn</a>
+          <a href='#'><BsSpotify size={16} />Spotify</a>
+        </SocialTag>
       </Photo>
     </MeContainer>
   );

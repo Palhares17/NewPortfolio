@@ -22,7 +22,7 @@ const Header = () => {
 
         <ul>
           <li>
-            <NavLink to="/contact">CV</NavLink>
+            <NavLink to="/cv">CV</NavLink>
           </li>
         </ul>
       </nav>

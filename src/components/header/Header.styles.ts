@@ -23,5 +23,30 @@ export const HeaderContainer = styled.header`
     font-size: 1;
     font-weight: 400;
     color: ${(props) => props.theme.colorText};
+    transition: color 0.1s ease-in-out;
+    position: relative;
+
+    .active:after,
+    &:after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0px;
+      background: ${(props) => props.theme.gradient};
+      margin-top: 6px;
+      transition: 0.3s;
+      position: absolute;
+    }
+
+    .active,
+    &:hover {
+      color: #fff;
+    }
+
+    .active::after,
+    &:hover:after {
+      color: #fff;
+      width: 50%;
+    }
   }
 `;

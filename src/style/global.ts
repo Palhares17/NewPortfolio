@@ -20,7 +20,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Lexend', sans-serif;
   }
 
-  p, li {
+  p, li, span, a {
     font-family: 'Ubuntu', sans-serif;
   }
 
