@@ -5,6 +5,8 @@ import Me from './components/me/Me';
 import { MaxWidthContainer } from './style/Container';
 import { GlobalStyles } from './style/global';
 import Header from './components/header/Header';
+import Project from './components/project/Project';
+// import { lightTheme } from './style/theme/Light';
 
 const App = () => {
   return (
@@ -15,6 +17,7 @@ const App = () => {
           <Header />
           <Routes>
             <Route path="/" element={<Me />} />
+            <Route path="projects" element={<Project />} />
 
           </Routes>
           <GlobalStyles />

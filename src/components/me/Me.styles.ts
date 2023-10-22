@@ -39,7 +39,7 @@ export const MeContainer = styled.div`
         content: '</>';
         position: absolute;
         left: -3rem;
-        background: linear-gradient(270deg, #A839FF 8.63%, #701CDA 37.22%);
+        background: ${props => props.theme.gradient};
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -64,18 +64,6 @@ export const Span = styled.span`
   letter-spacing: -0.06rem;
 `;
 
-export const GradientText = styled.span`
-  background: linear-gradient(270deg, #A839FF 8.63%, #701CDA 37.22%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.06rem;
-`;
-
 export const Tags = styled.span`
   display: inline-flex;
   padding: 0.25rem 0.75rem;
@@ -95,7 +83,7 @@ export const Photo = styled.div`
 
   > img {
     border-radius: 0.5rem;
-    box-shadow: 8px 8px 0px 0px #A839FF;
+    box-shadow: 8px 8px 0px 0px ${props => props.theme.boxShadow};
     transform: rotate(4.149deg);
   }
 `;

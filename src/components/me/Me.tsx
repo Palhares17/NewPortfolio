@@ -1,13 +1,14 @@
 import React from 'react';
-import { GradientText, MeContainer, Photo, SocialTag, Span, Tags } from './Me.styles';
+import { MeContainer, Photo, SocialTag, Span, Tags } from './Me.styles';
 import MyPhoto from '../../assets/myPhoto.png';
 import { BsGithub, BsLinkedin, BsSpotify } from 'react-icons/bs';
+import { GradientText, H1Styles } from '../../style/styles';
 
 const Me = () => {
   return (
     <MeContainer>
       <div className='intro'>
-        <h1><Span>E aí,</Span><br></br>Bem-Vindo ao meu <GradientText>Portifólio</GradientText> 👋</h1>
+        <H1Styles><Span>E aí,</Span><br></br>Bem-Vindo ao meu <GradientText>Portifólio</GradientText> 👋</H1Styles>
         <p>Lorem ipsum dolor sit amet. Eum ullam officia eum expedita molestiae hic quis excepturi et veritatis harum ut ducimus ratione. Est nulla consequatur nam sint voluptatem et rerum quia</p>
 
         <h3>
