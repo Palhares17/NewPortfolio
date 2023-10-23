@@ -8,7 +8,7 @@ import { ModalProjectProps } from '../MyProjects';
 const ModalProject = ({ item, event }: ModalProjectProps) => {
   return (
     <LayoutModal>
-      <Image />
+      <Image $link={item.img} />
       {/* <img src={BikCraft} alt="" /> */}
 
       <CloseModal onClick={event.onClick}><AiOutlineClose size={16} className="custom-icon" /></CloseModal>

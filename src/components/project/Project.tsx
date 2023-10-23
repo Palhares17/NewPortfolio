@@ -11,6 +11,14 @@ import { MyProjects, PropsProject } from './MyProjects';
 import ModalProject from './modalProject/ModalProject';
 import { ModalOverlay } from './modalProject/ModalProject.styles';
 
+import { Variants } from 'framer-motion';
+
+export const variants: Variants = {
+  open: { opacity: 1, x: 0 },
+  closed: { opacity: 0, x: '-100%' },
+};
+
+
 const Project = () => {
   const [hoveredProject, setHoveredProject] = React.useState<PropsProject | null>(null);
   const [modal, setModal] = React.useState<PropsProject | null>(null);
@@ -26,7 +34,15 @@ const Project = () => {
 
   return (
     <>
-      {modal && <ModalProject item={modal} event={() => setModal(null)} />}
+      {modal && (
+        <motion.div
+          animate={modal ? 'open' : 'closed'}
+          variants={variants}
+          transition={{ duration: 0.1 }}
+        >
+          <ModalProject item={modal} event={() => setModal(null)} />
+        </motion.div>
+      )}
 
       {modal && <ModalOverlay onClick={() => setModal(null)} />}
       <Introduction>
