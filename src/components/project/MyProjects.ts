@@ -6,6 +6,11 @@ export interface PropsProject {
   link: string;
 }
 
+export interface ModalProjectProps {
+  item: PropsProject;
+  onClick: any;
+}
+
 export const MyProjects: PropsProject[] = [
   {
     title: 'BikCraft',

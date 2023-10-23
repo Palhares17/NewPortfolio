@@ -7,4 +7,6 @@ export const defaultTheme = {
 
   boxShadow: '#A839FF',
   colorHover: '#FFF',
+
+  bgModal: '#000',
 };  

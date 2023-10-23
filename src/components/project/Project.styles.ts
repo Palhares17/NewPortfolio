@@ -12,7 +12,7 @@ export const FilterTech = styled.span`
   }
 `;
 
-export const DivSyles = styled.div`
+export const DivStyles = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
