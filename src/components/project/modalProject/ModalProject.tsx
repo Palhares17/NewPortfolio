@@ -1,13 +1,13 @@
 import React from 'react';
-import { CloseModal, ContainerModal, Image, LayoutModal, Spacer } from './ModalProject.styles';
-import { GradientText, H1Styles } from '../../../style/styles';
+import { CloseModal, ContainerModal, Image, LayoutModal } from './ModalProject.styles';
+import { GradientText, H1Styles, Spacer } from '../../../style/styles';
 import { AiOutlineClose } from 'react-icons/ai';
-import { PropsProject } from '../MyProjects';
+import { ModalProjectProps } from '../MyProjects';
+// import { MyProjects } from '../MyProjects';
 
-const ModalProject = (item: PropsProject, event: any) => {
+const ModalProject = ({ item, event }: ModalProjectProps) => {
   return (
     <LayoutModal>
-
       <Image />
       {/* <img src={BikCraft} alt="" /> */}
 

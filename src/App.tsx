@@ -7,6 +7,9 @@ import { MaxWidthContainer } from './style/Container';
 import { GlobalStyles } from './style/global';
 import Header from './components/header/Header';
 import Project from './components/project/Project';
+import CV from './components/cv/CV';
+// import { lightTheme } from './style/theme/Light';
+// import Footer from './components/footer/Footer';
 // import { lightTheme } from './style/theme/Light';
 
 // interface ThemeType {
@@ -21,11 +24,12 @@ import Project from './components/project/Project';
 // }
 
 const App = () => {
-  // const [theme, setTheme] = React.useState<ThemeType>(defaultTheme);
+  // const [theme, setTheme] = React.useState(defaultTheme);
 
-  // setTheme(lightTheme);
+  // // setTheme(lightTheme);
+  // console.log('setTheme', setTheme);
 
-  return (  
+  return (
     <ThemeProvider theme={defaultTheme}>
       <BrowserRouter>
 
@@ -34,8 +38,9 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Me />} />
             <Route path="projects" element={<Project />} />
-
+            <Route path="cv" element={<CV />} />
           </Routes>
+          {/* <Footer /> */}
           <GlobalStyles />
         </MaxWidthContainer>
 

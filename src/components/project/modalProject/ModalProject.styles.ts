@@ -69,13 +69,6 @@ export const ContainerModal = styled.div`
   }
 `;
 
-export const Spacer = styled.div`
-  width: 100%;
-  height: 2px;
-  background: #121212;
-  margin-bottom: 0.75rem;
-`;
-
 export const CloseModal = styled.div`
   position: absolute;
   display: flex;

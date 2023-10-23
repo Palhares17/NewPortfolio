@@ -12,6 +12,7 @@ export const MeContainer = styled.div`
     h1 {
       font-weight: 500;
       font-size: 2rem;
+      white-space: nowrap;
     }
 
     p {
@@ -19,14 +20,13 @@ export const MeContainer = styled.div`
       margin-top: 1.5rem;
       font-size: 1rem;
       font-style: normal;
-      font-weight: 300;
-      line-height: 150%; 
-      letter-spacing: 0.025rem;
+      font-size: 1rem;
+      line-height: 24px;
     }
 
     h3 {
       margin-top: 1.5rem;
-      color: #E7E7E7;
+      color: ${props => props.theme.colorTitle};
       font-family: Lexend;
       font-size: 1.2rem;
       font-style: normal;
@@ -56,7 +56,7 @@ export const MeContainer = styled.div`
 `;
 
 export const Span = styled.span`
-  color: #E7E7E7;
+  color: ${props => props.theme.colorText};
   font-family: Ubuntu;
   font-size: 1.5rem;
   font-style: normal;
@@ -104,8 +104,8 @@ export const SocialTag = styled.div`
     padding: 0.25rem 0.75rem;
     border-radius: 4px;
     border: 1.75px solid transparent;
-    color: white;
-    background: linear-gradient(#0A0909, #0A0909) padding-box, ${(props) => props.theme.gradient} border-box;
+    color: ${(props) => props.theme.colorText};
+    background: linear-gradient(${(props) => props.theme.socialTag}, ${(props) => props.theme.socialTag}) padding-box, ${(props) => props.theme.gradient} border-box;
     transition: 0.5s; 
   }
 `;

@@ -20,6 +20,7 @@ const Project = () => {
   };
 
   const handleModal = (project: PropsProject) => {
+    console.log(modal);
     setModal(project);
   };
 

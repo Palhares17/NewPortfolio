@@ -40,12 +40,12 @@ export const HeaderContainer = styled.header`
 
     .active,
     &:hover {
-      color: #fff;
+      color: ${props => props.theme.colorHover};
     }
 
     .active::after,
     &:hover:after {
-      color: #fff;
+      color: ${props => props.theme.colorHover};
       width: 50%;
     }
   }
