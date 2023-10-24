@@ -32,16 +32,15 @@ const Project = () => {
     setModal(project);
   };
 
+  const handleClose = () => {
+    setModal(null);
+  };
+
   return (
     <>
       {modal && (
-        <motion.div
-          animate={modal ? 'open' : 'closed'}
-          variants={variants}
-          transition={{ duration: 0.1 }}
-        >
-          <ModalProject item={modal} event={() => setModal(null)} />
-        </motion.div>
+
+        <ModalProject item={modal} event={handleClose} />
       )}
 
       {modal && <ModalOverlay onClick={() => setModal(null)} />}

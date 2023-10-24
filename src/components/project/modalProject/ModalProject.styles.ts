@@ -11,19 +11,18 @@ export const LayoutModal = styled.section`
   border-radius: 8px;
   background: ${props => props.theme.bgModal};
   box-shadow: 0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12);
-`;
 
-export const Image = styled.div<{ $link?: string }>`
+  img {
   padding: 4px;
-  background-image: url(${props => props.$link});
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px 8px 0 0;  
   width: 100%;
   height: 50%;
+  }
 `;
-
 
 export const ContainerModal = styled.div`
   margin: 3rem 2rem 0 2rem;

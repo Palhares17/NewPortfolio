@@ -14,7 +14,7 @@ export const H2Styles = styled.h1`
 `;
 
 
-export const GradientText = styled.h1`
+export const GradientText = styled.span`
   font-family: Ubuntu, sans-serif;
   background: ${props => props.theme.gradient};
   background-clip: text;
