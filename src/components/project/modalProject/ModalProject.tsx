@@ -1,14 +1,12 @@
 import React from 'react';
-import { CloseModal, ContainerModal, LayoutModal } from './ModalProject.styles';
+import { ContainerModal, LayoutModal } from './ModalProject.styles';
 import { GradientText, H1Styles, Spacer } from '../../../style/styles';
-import { AiOutlineClose } from 'react-icons/ai';
 import { ModalProjectProps } from '../MyProjects';
 
 import { motion } from 'framer-motion';
 
-const ModalProject = ({ item, event }: ModalProjectProps) => {
+const ModalProject = ({ item }: ModalProjectProps) => {
   return (
-
     <LayoutModal>
       <motion.div
         animate={{
@@ -17,8 +15,6 @@ const ModalProject = ({ item, event }: ModalProjectProps) => {
         transition={{ duration: 0.2 }}
       >
         <img src={item.img} alt="" />
-
-        <CloseModal><AiOutlineClose size={16} className="custom-icon" onClick={event.onClick} /></CloseModal>
         <ContainerModal>
           <H1Styles>{item.title}</H1Styles>
           <Spacer />
@@ -34,7 +30,6 @@ const ModalProject = ({ item, event }: ModalProjectProps) => {
         </ContainerModal>
       </motion.div >
     </LayoutModal >
-
   );
 };
 

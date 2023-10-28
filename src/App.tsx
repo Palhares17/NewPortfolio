@@ -8,6 +8,7 @@ import { GlobalStyles } from './style/global';
 import Header from './components/header/Header';
 import Project from './components/project/Project';
 import CV from './components/cv/CV';
+import Contact from './components/contact/Contact';
 // import { lightTheme } from './style/theme/Light';
 // import Footer from './components/footer/Footer';
 // import { lightTheme } from './style/theme/Light';
@@ -39,6 +40,7 @@ const App = () => {
             <Route path="/" element={<Me />} />
             <Route path="projects" element={<Project />} />
             <Route path="cv" element={<CV />} />
+            <Route path="contact" element={<Contact />} />
           </Routes>
           {/* <Footer /> */}
           <GlobalStyles />
