@@ -1,4 +1,3 @@
-import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Div, StyledContact, StyledForm } from './Contact.style';
 import { H1Styles } from '../../style/styles';

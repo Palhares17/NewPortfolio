@@ -1,4 +1,3 @@
-import React from 'react';
 import { Paragraph } from '../cv/CV.styles';
 
 import styled from 'styled-components';
