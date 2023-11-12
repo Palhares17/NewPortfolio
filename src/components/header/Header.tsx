@@ -1,8 +1,9 @@
 // import React from 'react';
+import SwitchTheme from '../switchTheme/SwitchTheme';
 import { HeaderContainer } from './Header.styles';
 import { Link, NavLink } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ event }: any) => {
   return (
     <HeaderContainer>
       <h1><Link to="/">Matheus Palhares</Link></h1>
@@ -23,7 +24,9 @@ const Header = () => {
             <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
+        <SwitchTheme change={event} />
       </nav>
+
     </HeaderContainer>
   );
 };

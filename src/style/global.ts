@@ -32,4 +32,17 @@ export const GlobalStyles = createGlobalStyle`
     color: inherit;
     text-decoration: none;
   }
+
+  body::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: ${props => props.theme.colorSpacer};   
+    border-radius: 20px;
+  }
 `;

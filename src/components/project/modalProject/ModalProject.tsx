@@ -1,4 +1,3 @@
-import React from 'react';
 import { ContainerModal, LayoutModal } from './ModalProject.styles';
 import { GradientText, H1Styles, Spacer } from '../../../style/styles';
 import { ModalProjectProps } from '../MyProjects';

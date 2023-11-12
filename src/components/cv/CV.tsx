@@ -1,4 +1,3 @@
-import React from 'react';
 import { H1Styles, H2Styles, Spacer } from '../../style/styles';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { CvContainer, MarginBottom, Paragraph, Social } from './CV.styles';
@@ -9,8 +8,8 @@ const CV = () => {
       <CvContainer>
         <H1Styles>Matheus Silva Palhares</H1Styles>
         <Social>
-          <a href='#' className="tags"><BsGithub />GitHub</a>
-          <a href='#' className="tags"><BsLinkedin />LinkedIn</a>
+          <a href='https://github.com/Palhares17' target="_blank" rel="noreferrer" className="tags"><BsGithub />GitHub</a>
+          <a href='https://www.linkedin.com/in/matheus-palhares-b90386210/' target="_blank" rel="noreferrer" className="tags"><BsLinkedin />LinkedIn</a>
           <a href='#'>🏖️ Rio das Ostras | RJ</a>
         </Social>
       </CvContainer>

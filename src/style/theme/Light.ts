@@ -10,4 +10,5 @@ export const lightTheme = {
   socialTag: '#FFFFFF',
 
   colorSpacer: '#e7e7e7',
+  bgModal: '#000',
 };

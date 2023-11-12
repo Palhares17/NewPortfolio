@@ -7,10 +7,13 @@ export const FilterTech = styled.span`
   background: ${props => props.theme.colorTag};
   border-radius: 4px;
   box-shadow: 0 3px 1px -3px rgba(0,0,0,.2), 0 6px 14px 1px rgba(0,0,0,.14), 0 3px 12px 4px rgba(0,0,0,.12);
+  min-width: 50px;
+  justify-content: center;
+  cursor: pointer;
+
 
   img {
     height: 2rem;
-    cursor: pointer;
   }
 `;
 

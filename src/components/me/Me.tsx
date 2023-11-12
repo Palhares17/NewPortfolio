@@ -1,4 +1,3 @@
-import React from 'react';
 import { MeContainer, Photo, SocialTag, Span, Tags } from './Me.styles';
 import MyPhoto from '../../assets/myPhoto.png';
 import { BsGithub, BsLinkedin, BsSpotify } from 'react-icons/bs';
@@ -27,9 +26,9 @@ const Me = () => {
       <Photo>
         <img src={MyPhoto} alt="Matheus Palhares" />
         <SocialTag>
-          <a href='#'><BsGithub size={16} />GitHub</a>
-          <a href='#'><BsLinkedin size={16} />LinkedIn</a>
-          <a href='#'><BsSpotify size={16} />Spotify</a>
+          <a href='https://github.com/Palhares17' target="_blank" rel="noreferrer"><BsGithub size={16} />GitHub</a>
+          <a href='https://www.linkedin.com/in/matheus-palhares-b90386210/' target="_blank" rel="noreferrer"><BsLinkedin size={16} />LinkedIn</a>
+          <a href='https://open.spotify.com/playlist/4AWO2yavVLTVuYE1PKDvXg' target="_blank" rel="noreferrer"><BsSpotify size={16} />Spotify</a>
         </SocialTag>
       </Photo>
     </MeContainer>
