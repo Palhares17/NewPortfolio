@@ -1,0 +1,40 @@
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.bgIcon {
+	color: var(--orange-200);
+}
+
+.grid {
+	margin-top: 2rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(22.5rem, 1fr));
+	gap: 1.5rem;
+	margin-bottom: 6rem;
+}
+
+img {
+	border: 1px solid #EBEBEB;
+	border-radius: 14px;
+	object-fit: cover;
+}
+
+@media (max-width: 1240px) {
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		flex-direction: column;
+		gap: .75rem;
+		margin: 0 auto;
+		text-align: start;
+	}
+}
+
+@media (max-width: 400px) {
+	.grid {
+		grid-template-columns: 1fr;
+	}
+}

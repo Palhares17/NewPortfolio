@@ -1,0 +1,15 @@
+.title {
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 32px;
+	color: var(--color-title-light);
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+@media (max-width: 375px) {
+	.title {
+		font-size: 1rem;
+	}
+}
