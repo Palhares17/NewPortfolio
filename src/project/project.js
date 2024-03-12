@@ -5,7 +5,6 @@ import oldPortfolio from '../assets/img/oldPortfolio.png';
 import projetoOrigamid from '../assets/img/projetoOrigamid.png';
 import tbtComunicacao from '../assets/img/tbtcomunicacao.png';
 
-
 export const project = [
 	{
 		link: bhrefrigeracao,

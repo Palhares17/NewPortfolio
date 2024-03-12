@@ -4,6 +4,7 @@ import Header from './header/Header';
 import Intro from './intro/Intro';
 import Project from './project/Project';
 import Skills from './skills/Skills';
+import About from './about/About';
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<Intro />
 			<Project />
 			<Skills />
+			<About />
 		</section>
 	);
 }

@@ -7,6 +7,7 @@
 	max-width: 400px;
 	margin: 0 auto;
 	text-align: center;
+	position: relative;
 }
 
 .bgIcon {
@@ -20,10 +21,39 @@
 	margin-top: 2rem;
 }
 
-img {
-	border: 1px solid #EBEBEB;
-	border-radius: 14px;
+.gridTechs {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+	flex-wrap: wrap;
+}
+
+.img {
+	height: 36px; 
 	object-fit: cover;
+}
+
+.techs {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.name {
+	font-weight: 600;
+	font-size: .875rem;
+}
+
+.content {
+	border: 1px solid #E4E4E4;
+	margin-top: 2rem;
+	padding: 24px 24px;
+	background: #f9f9f9;
+	border-radius: 24px;
+	margin-bottom: 6rem;
 }
 
 @media (max-width: 1240px) {
