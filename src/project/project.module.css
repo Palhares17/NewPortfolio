@@ -8,7 +8,7 @@
 }
 
 .grid {
-	margin-top: 2rem;
+	margin-top: 0.875rem;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(22.5rem, 1fr));
 	gap: 1.5rem;

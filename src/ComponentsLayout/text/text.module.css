@@ -1,4 +1,5 @@
 .text {
 	font-size: .875rem;
 	text-wrap: wrap;
+	line-height: 24px;
 }
