@@ -7,7 +7,7 @@ import { project } from './project';
 function Project() {
 	return (
 		<section>
-			<div className={styles.container}>
+			<div className={styles.container} id='project'>
 				<Title><Rocket className={styles.bgIcon} /> Alguns dos meus Projetos</Title>	
 			</div>
 			

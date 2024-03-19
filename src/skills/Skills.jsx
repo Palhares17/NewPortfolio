@@ -17,7 +17,7 @@ import github from '../assets/svg/github.svg';
 
 function Skills() {
 	return (
-		<section>
+		<section id='skills'>
 			<div className={styles.container}>
 				<Title>
 					<Code className={styles.bgIcon} /> Minhas Principais habilidades

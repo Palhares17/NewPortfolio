@@ -9,7 +9,7 @@ import History from './history/History';
 function About() {
 	return (
 		<div className={styles.margin}>
-			<section className={styles.flex}>
+			<section className={styles.flex} id='about'>
 				<div>
 					<img src={Image} alt="dev" className={styles.image}/>
 				</div>

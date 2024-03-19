@@ -67,7 +67,7 @@
 	gap: 24px; 
 }
 
-li {
+.link {
 	display: flex;
 	align-items: center;
 	gap: 12px;
@@ -77,7 +77,7 @@ li {
 	transition: .3s;
 }
 
-li:hover {
+.link:hover {
 	color: var(--orange-200);
 }	
 

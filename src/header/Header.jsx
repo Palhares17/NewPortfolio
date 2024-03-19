@@ -1,6 +1,7 @@
 import React from 'react';
 import { InstagramLogo, LinkedinLogo, Briefcase, Rocket, Code, PaperPlaneTilt } from '@phosphor-icons/react';
 import styles from './header.module.css';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 function Header() {
 	const [isOpen, setIsOpen] = React.useState(false);
@@ -22,7 +23,7 @@ function Header() {
 							<span className={styles.menu}></span>
 						</div>
 					</div>
-
+					
 					<h2 className={styles.logo}>Matheus</h2>
 				</div>
 			
@@ -30,10 +31,60 @@ function Header() {
 					<>
 						<nav className={styles.modal}>
 							<ul className={styles.items}>
-								<li><Briefcase size={24} className={styles.svg}/>Sobre</li>
-								<li><Rocket size={24} />Projetos</li>
-								<li><Code size={24} />Habilidades</li>
-								<li><PaperPlaneTilt size={24} />Contato</li>
+								<li>
+									<Link
+										activeClass="active"
+										to="about"
+										spy={true}
+										smooth={true}
+										offset={-70}
+										duration={500}
+										className={styles.link}
+									>	
+										<Briefcase size={24} className={styles.svg}/>
+										Sobre
+									</Link>
+								</li>
+								<li>
+									<Link
+										activeClass="active"
+										to="project"
+										spy={true}
+										smooth={true}
+										offset={-70}
+										duration={500}
+										className={styles.link}
+									>
+										<Rocket size={24} />
+										Projetos
+									</Link>
+								</li>
+								<li>
+									<Link
+										activeClass="active"
+										to="skills"
+										spy={true}
+										smooth={true}
+										offset={-70}
+										duration={500}
+										className={styles.link}
+									>
+										<Code size={24} />Habilidades
+									</Link>
+								</li>
+								<li>
+									<Link 
+										activeClass="active"
+										to="contact"
+										spy={true}
+										smooth={true}
+										offset={-70}
+										duration={500}
+										className={styles.link}
+									>
+										<PaperPlaneTilt size={24} />Contato
+									</Link>
+								</li>
 							</ul>
 						</nav>
 					</>

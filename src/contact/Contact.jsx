@@ -4,7 +4,7 @@ import styles from './contact.module.css';
 
 function Contact() {
 	return (
-		<section className={styles.container}>
+		<section className={styles.container} id='contact'>
 			<div className={styles.content}>
 				<h4 className={styles.title}>Parabéns, você chegou até aqui,<br></br>que tal se a gente trabalhasse junto.</h4>
 				<span className={styles.circle}></span>

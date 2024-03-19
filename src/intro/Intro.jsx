@@ -4,7 +4,7 @@ import { ArrowDown } from '@phosphor-icons/react';
 
 function Intro() {
 	return (
-		<section className={styles.intro}>
+		<section className={styles.intro} id='intro'>
 			<h1 className={styles.title}>
 				Desenvolvedor <span className={styles.gradient}>Front-end</span> & <br></br><span className={styles.gradient}>UI/UX Designer</span>
 			</h1>
