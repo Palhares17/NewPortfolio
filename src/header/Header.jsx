@@ -34,20 +34,6 @@ function Header() {
 								<li>
 									<Link
 										activeClass="active"
-										to="about"
-										spy={true}
-										smooth={true}
-										offset={-70}
-										duration={500}
-										className={styles.link}
-									>	
-										<Briefcase size={24} className={styles.svg}/>
-										Sobre
-									</Link>
-								</li>
-								<li>
-									<Link
-										activeClass="active"
 										to="project"
 										spy={true}
 										smooth={true}
@@ -70,6 +56,20 @@ function Header() {
 										className={styles.link}
 									>
 										<Code size={24} />Habilidades
+									</Link>
+								</li>
+								<li>
+									<Link
+										activeClass="active"
+										to="about"
+										spy={true}
+										smooth={true}
+										offset={-70}
+										duration={500}
+										className={styles.link}
+									>	
+										<Briefcase size={24} className={styles.svg}/>
+										Sobre
 									</Link>
 								</li>
 								<li>
